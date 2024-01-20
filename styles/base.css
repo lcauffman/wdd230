@@ -80,13 +80,13 @@ h3 {
 footer {
     background-color: #0D2C54;
     text-align: center;
-    color: white;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
 
 }
-script {
-    display: none;
+#lastModified {
+    font-size: 14px;
+    margin-top: 5px;
 }
