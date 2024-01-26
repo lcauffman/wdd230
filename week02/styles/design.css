@@ -25,6 +25,7 @@ main {
 h2 {
 	color: navy;
 	text-align: center;
+    justify-content: left;
 }
 
 article p {
