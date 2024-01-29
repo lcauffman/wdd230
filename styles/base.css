@@ -76,7 +76,9 @@ h3 {
     color: white;
     text-align: center;
 }
-
+.card ul {
+    color:black
+}
 footer {
     background-color: #0D2C54;
     text-align: center;
