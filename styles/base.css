@@ -1,31 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Genos:wght@300&display=swap');
 
-body {
-    font-family: 'Exo 2', sans-serif;
-    font-family: 'Genos', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-body {
-    display: grid;
-    place-items: center;
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
     
 }
+@media screen and (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
+    
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: aquamarine;
+    color: white;
+}
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    font-family: 'Genos';
+    font-size: 1.5rem;
+    max-width: 760px;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}  
+
+.navigation a:hover, .navigation a:active {
+  color: white;
+  background-color: black;
+}
+
+.show li {
+    display:block;
+}
+
+#menu.show::before{
+    content: 'X';
+}
+
+@media (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display:none;
+    }
+}
+
 header {
     background-color:#0D2C54;
     color: white;
     grid-template-columns: auto auto;
     width: 100%;
     text-align: center;
-    display: grid;
-    align-items: center;
-    justify-content: center;
     padding: 2rem 0;
     
 } 
 img {
     max-width: 200px;
-    grid-column: 1/2;
     height: auto;
     border-radius: 0%;
     padding-right: 2rem;
@@ -34,13 +100,23 @@ h1
 {
     margin: 0;
     text-align: left;
+
 }
-nav {
-    background-color: #B0DB43;
-    text-align: center;
-    width: 100%;
-    
+.container {  
+  font-family: 'Genos', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  background-color: aquamarine;
+
 }
+div {  
+	height: 100px;
+    width: 130px;
+}   
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -49,7 +125,6 @@ ul {
     
 }
 li {
-    font-family: 'Exo 2', sans-serif;
     font-family: 'Genos', sans-serif;
     font-size: 2rem;
 }
