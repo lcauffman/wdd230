@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Genos:wght@300&display=swap');
 
-@media screen and (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr; 
-    }
-    
+header {
+    background-color:#0D2C54;
+    color: white;
+    grid-template-columns: auto auto;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
 }
-@media screen and (max-width: 480px) {
-    body {
-        grid-template-columns: 1fr; 
-    }
-    
+body{
+    margin: 0;
+}
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 0%;
+    padding-right: 2rem;
 }
 #menu {
     display: block;
@@ -81,21 +85,6 @@ nav {
     }
 }
 
-header {
-    background-color:#0D2C54;
-    color: white;
-    grid-template-columns: auto auto;
-    width: 100%;
-    text-align: center;
-    padding: 2rem 0;
-    
-} 
-img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 0%;
-    padding-right: 2rem;
-}
 h1 
 {
     margin: 0;
@@ -111,10 +100,6 @@ h1
   justify-content: space-evenly;
   background-color: aquamarine;
 
-}
-div {  
-	height: 100px;
-    width: 130px;
 }   
 
 ul {
@@ -151,9 +136,7 @@ h3 {
     color: white;
     text-align: center;
 }
-.card ul {
-    color:black
-}
+
 footer {
     background-color: #0D2C54;
     text-align: center;
