@@ -23,6 +23,7 @@
 		flex: 1 1 100%;
 	}
 
+
 	.stuff {
 		margin: 1rem auto;
 	}
@@ -35,5 +36,5 @@
 }
 @media screen and (max-width: 480px) {
     body {
-        grid-template-columns: 1fr; 
-    }
+		grid-template-columns: 1fr;
+	}	}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Titillium+Web:wght@300&display=swap');
+
+
+
+
+
+body {
+    background-color: #EDF2F4;
+    max-width: 1600px;
+    text-align: center;
+    font-family: "Macondo";
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width:100%
+}
+nav a{
+    text-decoration: none;
+    color: #8AC6D0;
+    text-align: center;
+    padding: 35px;
+    width: 100%;
+}
+nav a:hover {
+    background-color: #012622;
+    color:#8AC6D0
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-msg {
+    grid-column:2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#hero-msg h4{
+    margin-top: 100px;
+    font-family: "Macondo";
+    text-align: center;
+    color:white;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+}
+
+.button-box{
+    text-align: center;
+}
+main section{
+    text-align: center;
+}
+.mountains {
+    width: 100%;
+    grid-column:2/10;
+    grid-row: 6/6;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.main section img {
+    box-sizing: border-box;
+}
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+    background-color: #EDF2F4;
+    height: 725px;
+}
+.msg {
+    font-family: "Macondo";
+    font-size: 2em;
+    background-color: #554971;
+    padding: 35px;
+    grid-column:2/10;
+    grid-row: 8/10;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+h2{
+    margin: 0;
+    color:#8AC6D0
+}
+h4{
+    text-align: center;
+}
+header {
+    background-color:#554971d8;
+    display:grid;
+    grid-template-columns: 150px auto;
+}
+.book, .join {
+    background-color:#EDF2F4;
+    color:#023618 ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-family: "Macondo";
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover{
+    background-color: #36213E;
+    color: #8AC6D0;
+}
+footer {
+    background-color:#554971 ;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-title {
+    font-family: "Macondo";
+    font-size: 2em;
+    color: white;
+    margin-top: 10px ;
+}
+h4 {
+    color: #8AC6D0;
+}
+.msg h2 {
+    font-family: "Macondo";
+    color: #8AC6D0;
+}
+.msg p {
+    color: #8AC6D0;
+    padding-bottom: 15px;
+    font-size: .8em;
+}
+footer h3 {
+    color: #8AC6D0;
+    text-decoration: underline;
+}
+footer a {
+    color: #8AC6D0;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #8AC6D0;
+}
+footer p a{
+    color: #8AC6D0;
+    text-decoration: underline;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+.logo {
+    width: 80px;
+
+}
+footer.social img{
+    padding-top: 15px;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: 200px 0;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+    margin: 200px 0;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+    margin: 200px 0;
+}
+.card-img{
+    width:100%;
+    border: 10px solid #554971;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.river-msg {
+    font-family: "Macondo";
+    background-color: #554971;
+    padding: 35px;
+    grid-column:2/4;
+    grid-row: 2/3;
+    margin: 100px 0;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.camping-msg {
+    font-family: "Macondo";
+    background-color: #554971;
+    padding: 35px;
+    grid-column:5/7;
+    grid-row: 2/3;
+    margin: 100px 0;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.rapids-msg {
+    font-family: "Macondo";
+    background-color: #554971;
+    padding: 35px;
+    grid-column:8/10;
+    grid-row: 2/3;
+    margin: 100px 0;
+    box-shadow: 5px 5px 10px #6f7364;
+}

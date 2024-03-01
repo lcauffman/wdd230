@@ -2,18 +2,32 @@
 
 
 header {
-    background-color: #747578;
-    color: #84dccf;
+    color: White;
+    border: 5px solid #84dccf;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 2rem 0;
+
+    background-color: #2F3061;
 }
+.hero-box{
+    justify-content: space-around;
+
+
+}
+.content h3{
+    color: #84dccf;
+    font-size: 1.5rem;
+}
+
 #menu {
-    display: block;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: aquamarine;
+    background-color: #84dccf;
     color: white;
 }
 
@@ -22,15 +36,14 @@ header {
 }
 
 nav {
-    background-color: #747578;
-    color: #84dccf;
-    border-top: 8px solid #84dccf;
-    border-bottom: 8px solid #84dccf;
+    color: #FF7F11;
+    border: 5px solid #2F3061;
+    margin: 40px;
 }
 
 .navigation {
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 10px 0;
     font-size: 1.5rem;
 }
 
@@ -41,8 +54,9 @@ nav {
 .navigation a {
     display: block;
     padding: 1.75rem;
+    font-family: "Josefin Sans", sans-serif;
     text-decoration: none;
-    color: #4c061d;
+    color: #2F3061;
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(2rem, 2vmin, 1.5rem);
@@ -51,7 +65,7 @@ nav {
 .navigation a:hover,
 .navigation a:active {
     color: #84dccf;
-    background-color: #4c061d;
+    background-color: #FF7F11;
 }
 
 .show li {
@@ -61,60 +75,38 @@ nav {
 #menu.show::before {
     content: "X";
 }
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-@media (min-width: 40em) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    #menu {
-        display: none;
-    }
 }
-
-ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-}
-li {
-    font-size: 2rem;
-}
-a {
-    text-decoration: none;
-    color: #575d90;
-}
-
 .card {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: 0.5rem;
+    width:700px;
+    min-height: 500px;
+    border: 5px solid #84dccf;
+    background-color: white;
+
 }
 .card h2 {
-    background-color: #0d2c54;
-    color: aliceblue;
     text-align: center;
-    padding: 1rem;
-    font-size: 3rem;
+    color: white;
+    background-color: #2F3061;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: space-evenly;
 }
-.card h3 {
-    font-family: "Satisfy", sans-serif;
+footer {
+    background-color: #2F3061;
     text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-.card p {
-    font-family: "Permanent Marker", sans-serif;
-    color: #0d2c54;
-    font-size: 1rem;
-    text-align: center;
-}
+    font-family: 'Acme', sans-serif;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
+}
+#lastModified {
+    font-size: 14px;
+    margin-top: 5px;
+}
