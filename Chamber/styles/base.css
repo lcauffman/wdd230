@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+    --primary-color: #84dccf;
+    --secondary-color: #2F3061;
+    --lightest-color: #faf3dd;
+    --dark-text-color: #faf3dd;
+    --dark-background-color: #2F3061;
+}
+
+header {
+    color: White;
+    border: 5px solid #84dccf;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-color: #2F3061;
+}
+.hero-box{
+    justify-content: space-around;
+
+.hero-msg{
+
+}
+}
+#hero-img {
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+}
+.button-box{
+    text-align:right;
+    color: #84dccf;
+    background-color:#EDF2F4;
+    font-size: 20px;
+}
+.book, .join {
+    background-color:#EDF2F4;
+    color:#023618 ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover{
+    background-color: white;
+    color: #84dccf;
+}
+.content h3{
+    color: #84dccf;
+    font-size: 1.5rem;
+}
+
+#menu {
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #84dccf;
+    color: white;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    color: #FF7F11;
+    border: 5px solid #2F3061;
+    margin: 40px;
+}
+
+.navigation {
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1.75rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    color: #2F3061;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(2rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: #84dccf;
+    background-color: #FF7F11;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.card {
+    width:700px;
+    min-height: 500px;
+    border: 5px solid #84dccf;
+    background-color: white;
+
+}
+.card h2 {
+    text-align: center;
+    color: white;
+    background-color: #2F3061;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: space-evenly;
+}
+footer {
+    background-color: #2F3061;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+#lastModified {
+    font-size: 14px;
+    margin-top: 5px;
+}
