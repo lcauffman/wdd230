@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chamber Membership</title>
+    <meta name="author" content="Logan Cauffman">
+    <meta content="Chamber Membership" name="description">
+
+    <meta property="og:title" content="Chamber Membership Levels">
+    <meta property="og:url" content=" https://lcauffman.github.io/wdd230/">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+
+<h1>Chamber of Commerce Membership</h1>
+
+<p>This page contains information about the benefits of joining the chamber and a membership application form. Choose from three membership levels: Non-Profit, Silver, and Gold, each offering unique perks.</p>
+
+<h2>Membership Levels:</h2>
+
+<ul>
+    <li><strong>Non-Profit Level:</strong>
+        <ul>
+            <li>Directory Listings</li>
+            <li>Publications Access</li>
+            <li>Networking Opportunities</li>
+        </ul>
+    </li>
+
+    <li><strong>Silver Level:</strong>
+        <ul>
+            <li>All Non-Profit Level benefits</li>
+            <li>Trainings</li>
+            <li>Social Media Exposure</li>
+            <li>Luncheons Attendance</li>
+        </ul>
+    </li>
+
+    <li><strong>Gold Level:</strong>
+        <ul>
+            <li>All Silver Level benefits</li>
+            <li>Sponsorships</li>
+            <li>Advertising Opportunities</li>
+            <li>Additional Perks</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Membership Application Form:</h2>
+
+<form action="process_membership.php" method="post">
+    <!-- Add your form fields here, such as name, organization, contact details, and membership level selection -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="organization">Organization:</label>
+    <input type="text" id="organization" name="organization" required>
+
+    <label for="contact">Contact Details:</label>
+    <input type="text" id="contact" name="contact" required>
+
+    <label for="membership-level">Choose Membership Level:</label>
+    <select id="membership-level" name="membership-level" required>
+        <option value="non-profit">Non-Profit</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+    </select>
+
+    <button type="submit">Submit Application</button>
+</form>
+
+</body>
+</html>

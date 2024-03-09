@@ -17,8 +17,11 @@
 </head>
 <body>
     <header>
-        <img src="images/logan.jpg" alt="Profile Image">
-        <h1>Logan Cauffman</h1>
+        <div class="header img">
+            <img src="images/logan.jpg" alt="Profile Image">
+        </div>
+            <h1>Logan Cauffman</h1>
+
     </header>
     <a id="menu" href="#">
     </a>
@@ -34,7 +37,7 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/1280x800/yigo_guam_temple_2.jpg" alt="Yigo Guam Temple - 2022">
+                <img src="images/columbia_temple_lds.webp" alt="South Carolina Temple">
             </picture>
             <div class="herolabel">
                 <p>South Carolina Columbia Temple</p>
@@ -50,7 +53,7 @@
                 <li> Lesson 04: <a href="https://codepen.io/lcauffman/pen/vYMYVYX">CSS Pseudo-Classes</a></li>
                 <li> Lesson 05: <a href="lesson05/bom.html">Book Of Mormon Activity</a></li>
                 <li> Lesson 06:</li>
-                <li> Lesson 07:</li>
+                <li> Lesson 07: <a href="lesson07/bom.html">Book Of Mormon Activity W/Delete</a></li>
                 <li> Lesson 08:</li>
                 <li> Lesson 09:</li>
                 
@@ -59,7 +62,15 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-        </section>        
+            <p>Temperature: <span id="temperature">35</span> °F</p>
+            <p>Wind Speed: <span id="windSpeed">7.5</span> mph</p>
+            <p>Wind Chill Factor: <span id="windChill"></span></p>
+            <br>
+            <p>
+                <span class="label">Number of Visits: </span>
+                <span class="visits"></span>
+            </p>
+        </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12178.613696425418!2d-111.6766208!3d40.261233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1707420754014!5m2!1sen!2sus" 
         width="600" 
         height="450" 
@@ -76,6 +87,8 @@
     </footer>
     <script src = 'scripts/getdates.js'></script>
     <script src = 'scripts/hamburger.js'></script>
+    <script src = 'scripts/pagevisit.js'></script>
+    <script src = 'scripts/windchill.js'></script>
 
 
     
