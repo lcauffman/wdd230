@@ -112,3 +112,13 @@ footer {
     font-size: 14px;
     margin-top: 5px;
 }
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
