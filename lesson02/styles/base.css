@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Satisfy&display=swap');
+
+header {
+    background-color: #0D2C54;
+    text-align: center;
+    font-family: "Satisfy", sans-serif;
+    font-size: 2rem;
+}
+body {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h1
+{
+    text-align: center;
+    font-family: "Satisfy", sans-serif;
+    font-size: 2rem;
+    color: white;
+
+}
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0.5rem;
+
+}
+.card h2 {
+    background-color: #0D2C54;
+    color:aliceblue;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: "Satisfy", sans-serif;
+}
+.card h3 {
+    font-family: "Satisfy", sans-serif;
+    text-align: center;
+    align-items: center;
+    margin: auto 2rem;
+    font-size: 3rem;
+}
+.card a {
+    font-family: "Permanent Marker", sans-serif;
+    text-align: center;
+    margin: auto 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.card img {
+    max-width: 20%;
+    margin: auto;
+    place-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.card p {
+    font-family: "Permanent Marker", sans-serif;
+    color:#0D2C54;
+    font-size: 1.5rem;
+    margin: auto 1rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+footer {
+    background-color: #0D2C54;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Satisfy", sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
