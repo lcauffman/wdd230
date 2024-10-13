@@ -8,14 +8,14 @@
     <meta name="author" content="Logan Cauffman">
     <meta name="description" content="WDD 230 - Web Frontend Development">
 
-    <meta property="og:url" content="https://www.provo.org/">
+    <meta property="og:url" content=" https://lcauffman.github.io/wdd230/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="City Of Provo">
-    <meta property="og:image" content="https://www.provo.org/home/showpublishedimage/22571/638591398392730000">
-    <meta property="og:description" content="Provo Utah, Main Website Page">
+    <meta property="og:title" content="Github Main Class Project Site">
+    <meta property="og:description" content="https://lcauffman.github.io/wdd230/images/logan.jpg">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger-view.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -26,8 +26,8 @@
     <h1>Logan Cauffman</h1>
 
 </header>
-<a id="menu" href="#" aria-label="Toggle navigation">Menu</a>
-
+<a id="menu" href="#">
+</a>
 <nav>
     <ul class="navigation">
         <li><a href="#">Home</a></li>
@@ -43,26 +43,45 @@
         <h3>Learning Activities</h3>
         <ol>
             <li> Lesson 01: <a href="lesson01/holygrail.html">Holy Grail </a></li>
-            <li> Lesson 02:<a href="lesson02/design-principles.html">Design Principles</a></li>
-            <li> Lesson 03:</li>
-            <li> Lesson 04:</li>
-            <li> Lesson 05:</li>
-            <li> Lesson 06:</li>
-            <li> Lesson 07:</li>
-            <li> Lesson 08:</li>
-            <li> Lesson 09:</li>
+            <li> Lesson 02: <a href="lesson02/design-principles.html"> Design Principles</a></li>
+            <li> Lesson 03: <a href="lesson03/chamber-site-plan.html"> Chamber Site Plan</a></li>
+            <li> Lesson 04: <a href="https://codepen.io/lcauffman/pen/vYMYVYX">CSS Pseudo-Classes</a></li>
+
+
         </ol>
     </section>
+    <section class="card">
+        <h3>Information</h3>
+        <p>Temperature: <span id="temperature">35</span> °F</p>
+        <p>Wind Speed: <span id="windSpeed">7.5</span> mph</p>
+        <p>Wind Chill Factor: <span id="windChill"></span></p>
+        <br>
+        <p>
+            <span class="label">Number of Visits: </span>
+            <span class="visits"></span>
+        </p>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12178.613696425418!2d-111.6766208!3d40.261233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1707420754014!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 </main>
 
 
 <footer>
     &copy; Logan Cauffman | Last Modified: <span id="currentdate"></span>
 </footer>
-<script src = "scripts/getdates.js">
+<script src = 'scripts/getdates.js'></script>
+<script src = 'scripts/hamburger.js'></script>
+<script src = 'scripts/pagevisit.js'></script>
+<script src = 'scripts/windchill.js'></script>
 
-</script>
+
+
 
 </body>
-
 </html>
